@@ -1,0 +1,14 @@
+{
+  "name": "deshbord-2-test-2",
+  "version": "1.0.0",
+  "description": "deshbord-2-test-2jignesh",
+  "main": "index.js",
+  "scripts": {
+"compile:sass":"node-sass sass/main.scss css/style-sass.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,114 @@
+/* menu section */
+
+.menu {
+  display: flex;
+  height: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid lightgrey;
+    top: 8.5rem;
+    width: 100%;
+  }
+  &-icons {
+    background-color: #fff;
+    position: relative;
+    padding: 0rem 0;
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      list-style-type: none;
+      gap: 2rem;
+      display: inline-block;
+      .logo {
+        transform: skewX(-60deg);
+        display: block;
+      }
+      & li a,
+      & li a:link,
+      & li a:visited {
+        padding: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem;
+        color: black;
+        display: block;
+      }
+      .active,
+      & li a:hover,
+      & li a:active {
+        background-color: #ebe3d7;
+      }
+      & li:first-child {
+        margin-bottom: 10rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1.5rem;
+          width: 1.5rem;
+          border-radius: 50%;
+          top: 1.1rem;
+          left: 1.8rem;
+          text-align: center;
+          border: 3px solid grey;
+        }
+      }
+      & li:last-child {
+        position: absolute;
+        bottom: 0rem;
+      }
+    }
+  }
+}
+.menu-bar {
+  padding: 2rem;
+  width: 30rem;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .teamwork {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    &-item {
+      & ion-icon {
+        float: right;
+      }
+      .projects-ul {
+        padding: 1rem 0 0 2rem;
+        display: none;
+        &:last-child {
+          color: #000;
+        }
+      }
+    }
+    & li {
+      cursor: pointer;
+
+      &:hover .projects-ul,
+      &:active .projects-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        color: #b5a79e;
+      }
+      &:hover .projects-ul li:last-child,
+      &:active .projects-ul li:last-child {
+        color: #000;
+      }
+    }
+  }
+}

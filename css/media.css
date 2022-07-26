@@ -1,0 +1,368 @@
+@media (max-width: 1500px) {
+  .menu-bar {
+    width: 31rem;
+  }
+}
+@media (max-width: 1400px) {
+  .menu-bar {
+    width: 29rem;
+  }
+}
+@media (max-width: 1300px) {
+  .menu-bar {
+    width: 27rem;
+  }
+}
+@media (max-width: 1200px) {
+  .menu-bar {
+    width: 25rem;
+  }
+}
+@media (max-width: 1100px) {
+  .menu-bar {
+    width: 23rem;
+  }
+}
+@media (max-width: 1000px) {
+  .menu-bar {
+    width: 21rem;
+  }
+}
+
+/* for 1200 pixels tab-land */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+    /* 1rem=9px, 9/16=50% */
+  }
+  .container {
+    /* grid-template-columns: 25% 40% 35%; */
+  }
+  /* .menu-bar {
+    width: 16.5rem;
+  } */
+  .main,
+  .aside {
+    padding: 2rem;
+    justify-content: start;
+    gap: 3rem;
+  }
+  .search {
+    padding: 1.5rem;
+  }
+  .flex-box {
+    /* flex-direction: column; */
+  }
+  .margin-bottom {
+    margin-bottom: 14rem;
+  }
+  .box {
+    padding: 1.5rem;
+  }
+  .box-div1 {
+    /* margin-bottom: 2rem; */
+  }
+  .reminders-box {
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .discussion {
+    gap: 1rem !important;
+  }
+}
+
+/* for 900 pixels tab-port */
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+    /* 1rem=8px, 8/16=50% */
+  }
+  .container {
+    grid-template-columns: 10% 50% 40%;
+  }
+  .checkbox-home:checked ~ .menu-bar {
+    visibility: visible;
+  }
+  .menu-icons {
+    width: 100%;
+  }
+  .logo-li:first-child::after {
+    left: 5.2rem;
+  }
+  .logo-li:first-child {
+    padding-top: 1rem;
+  }
+  .menu-bar {
+    visibility: hidden;
+    padding: 1.5rem;
+    /* width: 30rem; */
+  }
+  .main {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .search {
+    margin-top: 0.5rem;
+    height: 3rem;
+    padding: 1.5rem;
+  }
+  .recent-project-div {
+    gap: 1.5rem;
+  }
+  .flex-box {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  .box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .margin-bottom {
+    margin-bottom: 9rem;
+  }
+  .reminders-box {
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .discussion {
+    /* margin-top: 0.3rem; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1.5rem !important;
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+  }
+  .set-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .aside {
+    padding: 1rem;
+  }
+  .aside-div-1 {
+    gap: 1.7rem;
+  }
+  .profile {
+    gap: 0.8rem;
+  }
+  .team-members-img-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin: 1.5rem 0;
+  }
+  .team-members-img-div img {
+    justify-self: center;
+  }
+  .team-members-number-div {
+    padding: 1rem 1.5rem;
+  }
+  .team-members-number-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .aside-div-3 {
+    gap: 2rem;
+  }
+  .daily-tasks-div-main {
+    gap: 1rem;
+  }
+
+  /*.daily-add-new {
+    top: 1.5rem;
+  }
+  .daily-plus {
+    right: 3rem;
+  }
+  .daily-tasks-div-2-text {
+    top: 40%;
+    padding: 0;
+    width: 65%;
+  } */
+}
+
+/* for 600 pixels phone */
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+  .container {
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr 1fr;
+  }
+  /* menu-section */
+  .menu {
+    grid-row: 1/-1;
+  }
+  .menu-bar {
+    /* visibility: hidden; */
+    padding: 1rem;
+    width: 90vw;
+  }
+  .logo-li:first-child::after {
+    left: 5.2rem;
+  }
+  .logo-li:first-child {
+    padding-top: 1rem;
+  }
+  /* .menu-icons .menu-icons-list .active .checkbox-home:checked + .menu-bar {
+    visibility: hidden;
+  } */
+  /* .checkbox-home:checked + .menu-bar {
+     visibility: hidden; 
+    opacity: 1;
+    visibility: visible;
+  } */
+  /* main section */
+  .main {
+    padding: 3rem;
+  }
+  .aside {
+    padding: 0 3rem 3rem 3rem;
+  }
+  .search {
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    height: 3.5rem;
+    padding: 1.5rem;
+  }
+  .recent-project-div {
+    gap: 2rem;
+  }
+  .flex-box {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  .box {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0 0 1rem lightgrey;
+  }
+  .margin-bottom {
+    margin-bottom: 7.5rem;
+  }
+  .box-div1 {
+    margin-bottom: 2rem;
+  }
+  .reminders-box {
+    padding: 2rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .discussion {
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+    /* justify-content: space-between; */
+    align-items: stretch;
+  }
+  .aside {
+    box-shadow: none;
+    gap: 3rem;
+  }
+  .aside-div-1 {
+    gap: 2.5rem;
+  }
+  .add-project-btn {
+    padding: 0.5rem 2.5rem;
+  }
+  .profile {
+    gap: 2.5rem;
+  }
+  .down-circle {
+    margin-left: 1.5rem;
+  }
+  .team-members-img-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin: 2rem 0;
+  }
+  .team-members-img-div img {
+    justify-self: center;
+    height: 5rem;
+    width: 5rem;
+  }
+  .team-members-number-div {
+    padding: 1.5rem 2rem;
+  }
+  .team-members-number-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .team-members-number-div span {
+    font-size: 1.1rem;
+  }
+  .daily-tasks-div-main {
+    gap: 2rem;
+    align-items: center;
+  }
+  .daily-tasks-div {
+    height: 18rem;
+  }
+  .daily-add-new {
+    top: 1.5rem;
+  }
+  .daily-plus {
+    right: 3rem;
+  }
+  .daily-tasks-div-2-text {
+    top: 40%;
+    padding: 0;
+    width: 65%;
+  }
+}
+
+/* @mixin respond($breakpoint) {
+  //600px
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  //900px
+  @if $breakpoint==tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  //1200px
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  //1800px
+  @if $breakpoint==big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+html {
+  //this define what 1 rem is.
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    //width<1200?
+    font-size: 56.25%; //1rem=9px, 9/16=50%
+  }
+  @include respond(tab-port) {
+    //width<900?
+    font-size: 50%; //1rem=8px, 8/16=50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem=12px, 12/16
+  }
+} */
